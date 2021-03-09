@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">HAP</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Signin</string>
+    <string name="signup">Signup</string>
+    <string name="continue_gamil">Continue with Gmail</string>
+    <string name="continue_fb">Continue with Facebook</string>
+    <string name="other_singin">Other Signin</string>
+
 </resources>

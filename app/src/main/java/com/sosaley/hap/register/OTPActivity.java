@@ -68,6 +68,8 @@ public class OTPActivity extends AppCompatActivity {
         @Override
         public void onVerificationFailed(@NonNull FirebaseException e) {
 
+            System.out.println("FailedException"+e.getMessage().toString());
+
         }
 
         @Override
@@ -111,6 +113,9 @@ public class OTPActivity extends AppCompatActivity {
 
 
                         } else {
+
+                            System.out.println("Exception"+task.getException().getMessage().toString());
+
                             Toast.makeText(OTPActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
 

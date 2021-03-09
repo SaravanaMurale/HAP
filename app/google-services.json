@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1076299569480-d98igllb3elcs7jfle8fd3kk848ng7l4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sosaley.hap",
+            "certificate_hash": "36659da7b08c16d8385edf0a7fabfeb8bc5be05d"
+          }
+        },
+        {
           "client_id": "1076299569480-40hm8qtps8euo3d4giv1u23jhnoo3krb.apps.googleusercontent.com",
           "client_type": 3
         }

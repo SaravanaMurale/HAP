@@ -47,7 +47,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
                 Intent intent=new Intent(SignupActivity.this,OTPActivity.class);
 
-                intent.putExtra("MOBILE","+919123521374");
+                intent.putExtra("MOBILE","+919445903393");
 
                 startActivity(intent);
 

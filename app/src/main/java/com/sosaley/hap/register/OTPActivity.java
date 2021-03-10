@@ -94,7 +94,11 @@ public class OTPActivity extends AppCompatActivity {
         });
 
 
+        System.out.println("EnteredNumber "+mobileNumber);
+
         sendVerificationCode(mobileNumber);
+
+
 
 
     }

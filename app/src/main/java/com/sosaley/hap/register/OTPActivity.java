@@ -94,9 +94,7 @@ public class OTPActivity extends AppCompatActivity {
         });
 
 
-
-
-        //sendVerificationCode(mobileNumber);
+        sendVerificationCode(mobileNumber);
 
 
     }

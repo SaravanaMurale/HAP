@@ -9,5 +9,7 @@
     <string name="continue_gamil">Continue with Gmail</string>
     <string name="continue_fb">Continue with Facebook</string>
     <string name="other_singin">Other Signin</string>
+    <string name="otp_sent">Verification code sent to </string>
+    <string name="resend">Resend OTP?</string>
 
 </resources>

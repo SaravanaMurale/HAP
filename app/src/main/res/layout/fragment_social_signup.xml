@@ -21,7 +21,10 @@
             android:layout_marginRight="@dimen/twenty_dp"
             android:fontFamily="sans-serif-condensed"
             android:paddingBottom="@dimen/ten_dp"
-            android:text="Signup with Facebook" />
+            android:text="Signup with Facebook"
+            android:textColor="@color/white"
+            android:background="@color/hatsun_blue"
+            />
 
        <!-- <com.shobhitpuri.custombuttons.GoogleSignInButton
             android:id="@+id/gmailSignup"
@@ -49,7 +52,7 @@
             android:fontFamily="sans-serif-condensed"
             android:text="@string/continue_gamil"
             android:gravity="center"
-            android:background="@color/red"/>
+            android:background="@color/hatsun_blue"/>
 
         <TextView
             android:id="@+id/othersignin"

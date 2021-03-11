@@ -6,13 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".register.SignupActivity">
 
-
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hatsun_agro_pro_logo"
+        android:layout_centerHorizontal="true" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signupNameBlock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/one_fifty_dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="@dimen/thirty_dp"
         android:layout_marginRight="@dimen/thirty_dp">
 
@@ -21,8 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_name"
-            android:gravity="center"
-            android:inputType="text" />
+            android:gravity="left"
+            android:inputType="text"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableRight="@drawable/person_icon"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -40,7 +47,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/mobile"
-            android:gravity="center"
+            android:gravity="left"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableRight="@drawable/mobile_icon"
             android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -59,7 +68,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:gravity="center"
+            android:gravity="left"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableRight="@drawable/email_icon"
             android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +91,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
-            android:gravity="center"
+            android:gravity="left"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textPassword"
+
 
              />
 
@@ -89,9 +103,11 @@
 
     <Button
         android:id="@+id/signUpBtn"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/signup"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_below="@id/signupPasswordBlock"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/thirty_dp"

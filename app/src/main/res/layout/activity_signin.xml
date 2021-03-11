@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:text="@string/dont_account"
         android:layout_below="@id/signInBtn"
-        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_marginTop="17dp"
         android:layout_toLeftOf="@id/signInSignUp"
         android:layout_marginRight="@dimen/five_dp"
         android:textColor="@color/black"
@@ -115,7 +115,7 @@
         android:layout_marginTop="@dimen/fifteen_dp"
         android:textColor="@color/hatsun_blue"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="12sp"
+        android:textSize="15sp"
         />
 
     <TextView
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:text="@string/forget_password"
         android:layout_below="@id/signInBtn"
-        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_marginTop="17dp"
         android:textColor="@color/black"
         android:layout_marginLeft="@dimen/thirty_dp"
         android:textSize="12sp"

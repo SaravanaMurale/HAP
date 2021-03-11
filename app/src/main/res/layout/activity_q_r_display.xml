@@ -16,6 +16,15 @@
         android:background="@drawable/background_shape"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnScanQR"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="Click scanQR to scan QR code "
+        android:layout_centerHorizontal="true"
+        />
+
     <RelativeLayout
         android:id="@+id/qrDisplayBlock"
         android:layout_width="match_parent"
@@ -293,6 +302,16 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/five_dp"
         android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sosaley"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
 
         />
 

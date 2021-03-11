@@ -5,13 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/hatsun_bg"
+
     tools:context=".register.SplashScreenActivity">
 
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/hatsunlogo"
         android:layout_centerInParent="true"
-        />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hatsunlogo" />
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cow" />-->
 
 </RelativeLayout>

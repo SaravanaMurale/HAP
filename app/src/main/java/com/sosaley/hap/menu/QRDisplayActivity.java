@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sosaley.hap.R;
@@ -15,18 +16,26 @@ import com.sosaley.hap.utils.PermissionUtils;
 
 public class QRDisplayActivity extends AppCompatActivity {
 
-    Button startQR;
+    public static Button btnScanQR,edit,update,sync;
     public static TextView displayQR;
 
    public static TextView clientName,plantName,batteryRoomNo,upsNo,rackNo,slaveNo,slaveType;
+
+   public static RelativeLayout qrDisplayBlock;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q_r_display);
 
-        startQR=(Button) findViewById(R.id.startQR);
+        btnScanQR=(Button) findViewById(R.id.btnScanQR);
         displayQR=(TextView)findViewById(R.id.displayQR);
+
+        qrDisplayBlock=(RelativeLayout)findViewById(R.id.qrDisplayBlock);
+
+        edit=(Button)findViewById(R.id.edit);
+        update=(Button)findViewById(R.id.update);
+        sync=(Button)findViewById(R.id.sync);
 
         clientName=(TextView)findViewById(R.id.clientName);
         plantName=(TextView)findViewById(R.id.plantName);
@@ -37,7 +46,7 @@ public class QRDisplayActivity extends AppCompatActivity {
         slaveType=(TextView)findViewById(R.id.slaveType);
 
 
-        startQR.setOnClickListener(new View.OnClickListener() {
+        btnScanQR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!PermissionUtils.hasPermission(QRDisplayActivity.this, Manifest.permission.CAMERA)) {

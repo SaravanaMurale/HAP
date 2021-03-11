@@ -100,7 +100,7 @@
         android:layout_toLeftOf="@id/signInSignUp"
         android:layout_marginRight="@dimen/five_dp"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:fontFamily="sans-serif-condensed"
         />
 
@@ -113,9 +113,9 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/thirty_dp"
         android:layout_marginTop="@dimen/fifteen_dp"
-        android:textColor="@color/green"
+        android:textColor="@color/hatsun_blue"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="15sp"
+        android:textSize="12sp"
         />
 
     <TextView
@@ -127,7 +127,7 @@
         android:layout_marginTop="@dimen/fifteen_dp"
         android:textColor="@color/black"
         android:layout_marginLeft="@dimen/thirty_dp"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:fontFamily="sans-serif-condensed"
         />
 

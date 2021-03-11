@@ -3,6 +3,7 @@ package com.sosaley.hap.menu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.zxing.Result;
@@ -10,10 +11,9 @@ import com.sosaley.hap.R;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class QRScannerActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler{
+public class QRScannerActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     ZXingScannerView zXingScannerView;
-
 
 
     @Override
@@ -30,15 +30,19 @@ public class QRScannerActivity extends AppCompatActivity implements ZXingScanner
     @Override
     public void handleResult(Result result) {
 
-        String scannedResult=result.getText();
+        String scannedResult = result.getText();
 
         //QRDisplayActivity.displayQR.setText(result.getText());
+        QRDisplayActivity.edit.setVisibility(View.VISIBLE);
+        QRDisplayActivity.update.setVisibility(View.VISIBLE);
+        QRDisplayActivity.sync.setVisibility(View.VISIBLE);
+        QRDisplayActivity.qrDisplayBlock.setVisibility(View.VISIBLE);
 
-        String[] words=scannedResult.split(":");
+        String[] words = scannedResult.split(":");
 
-        for (int i = 0; i <words.length ; i++) {
+        for (int i = 0; i < words.length; i++) {
 
-            System.out.println("ArraySize"+words.length);
+            System.out.println("ArraySize" + words.length);
 
             /*System.out.println("ArrayPosition0"+words[0]);
             System.out.println("ArrayPosition1"+words[1]);
@@ -81,9 +85,6 @@ public class QRScannerActivity extends AppCompatActivity implements ZXingScanner
 
         zXingScannerView.stopCamera();
     }
-
-
-
 
 
 }

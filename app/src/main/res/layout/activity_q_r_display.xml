@@ -10,7 +10,9 @@
         android:id="@+id/startQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start QR"
+        android:text="Scan QR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fifty_dp"
         />
 
     <TextView
@@ -19,5 +21,170 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/startQR"
         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hundren_dp"
+        android:layout_centerInParent="true"
+        >
+
+    <TextView
+        android:id="@+id/clientNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/client_name"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/five_dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/clientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hutsan Agro Products"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/five_dp"
+        />
+
+        <TextView
+            android:id="@+id/plantNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plant_name"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/clientNameTxt"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant Name"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/clientName"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+
+        <TextView
+            android:id="@+id/batteryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battery_no"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/plantNameTxt"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/plantName"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+
+        <TextView
+            android:id="@+id/upsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ups_no"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/batteryTxt"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/ups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/battery"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+
+        <TextView
+            android:id="@+id/rackTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/race_id"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/upsTxt"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/rack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ups"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/slaveTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slave_id"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/rackTxt"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/slave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rack"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/slaveTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slave_type"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/slaveTxt"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+        <TextView
+            android:id="@+id/slaveType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/slave"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/five_dp"
+            />
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

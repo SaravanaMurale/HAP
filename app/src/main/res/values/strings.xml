@@ -13,5 +13,14 @@
     <string name="resend">Resend OTP?</string>
     <string name="dont_account">Dont Have An Account?</string>
     <string name="forget_password">Forget Password?</string>
+    
+    
+    <string name="client_name">Client Name</string>
+    <string name="plant_name">Plant Name</string>
+    <string name="battery_no">Battery Room #</string>
+    <string name="ups_no">UPS #</string>
+    <string name="race_id">Ract ID #</string>
+    <string name="slave_id">Slave ID #</string>
+    <string name="slave_type">Slave Type</string>
 
 </resources>

@@ -18,6 +18,8 @@ public class QRDisplayActivity extends AppCompatActivity {
     Button startQR;
     public static TextView displayQR;
 
+   public static TextView clientName,plantName,batteryRoomNo,upsNo,rackNo,slaveNo,slaveType;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,15 @@ public class QRDisplayActivity extends AppCompatActivity {
 
         startQR=(Button) findViewById(R.id.startQR);
         displayQR=(TextView)findViewById(R.id.displayQR);
+
+        clientName=(TextView)findViewById(R.id.clientName);
+        plantName=(TextView)findViewById(R.id.plantName);
+        batteryRoomNo=(TextView)findViewById(R.id.battery);
+        upsNo=(TextView)findViewById(R.id.ups);
+        rackNo=(TextView)findViewById(R.id.rack);
+        slaveNo=(TextView)findViewById(R.id.slave);
+        slaveType=(TextView)findViewById(R.id.slaveType);
+
 
         startQR.setOnClickListener(new View.OnClickListener() {
             @Override

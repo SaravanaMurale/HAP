@@ -3,6 +3,7 @@ package com.sosaley.hap.menu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.zxing.Result;
 import com.sosaley.hap.R;
@@ -12,6 +13,8 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 public class QRScannerActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler{
 
     ZXingScannerView zXingScannerView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,19 +30,37 @@ public class QRScannerActivity extends AppCompatActivity implements ZXingScanner
     @Override
     public void handleResult(Result result) {
 
-        System.out.println("BarCodeFormet" + result.getBarcodeFormat().name());
-        System.out.println("StringFormetData" + result.getText().toString());
-
-        byte[] bytes = result.getRawBytes();
-
-        System.out.println(bytes.length);
-
-        result.getText().toString();
-
-
-        //result.addResultPoints(ResultPoint[] result);
+        String scannedResult=result.getText();
 
         QRDisplayActivity.displayQR.setText(result.getText());
+
+        String[] words=scannedResult.split(":");
+
+        for (int i = 0; i <words.length ; i++) {
+
+            System.out.println("ArraySize"+words.length);
+
+            /*System.out.println("ArrayPosition0"+words[0]);
+            System.out.println("ArrayPosition1"+words[1]);
+            System.out.println("ArrayPosition2"+words[2]);
+            System.out.println("ArrayPosition3"+words[3]);
+            System.out.println("ArrayPosition4"+words[4]);
+            System.out.println("ArrayPosition5"+words[5]);
+            System.out.println("ArrayPosition6"+words[6]);
+            System.out.println("ArrayPosition7"+words[7]);*/
+
+            QRDisplayActivity.clientName.setText(words[1]);
+            QRDisplayActivity.plantName.setText(words[2]);
+            QRDisplayActivity.batteryRoomNo.setText(words[3]);
+            QRDisplayActivity.upsNo.setText(words[4]);
+            QRDisplayActivity.rackNo.setText(words[5]);
+            QRDisplayActivity.slaveNo.setText(words[6]);
+            QRDisplayActivity.slaveType.setText(words[7]);
+
+
+            /*System.out.println("7th position"+words[7]);
+            System.out.println("8th position"+words[8]);*/
+        }
 
         onBackPressed();
 

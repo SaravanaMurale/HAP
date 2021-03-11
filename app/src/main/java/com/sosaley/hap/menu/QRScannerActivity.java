@@ -32,7 +32,7 @@ public class QRScannerActivity extends AppCompatActivity implements ZXingScanner
 
         String scannedResult=result.getText();
 
-        QRDisplayActivity.displayQR.setText(result.getText());
+        //QRDisplayActivity.displayQR.setText(result.getText());
 
         String[] words=scannedResult.split(":");
 

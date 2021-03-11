@@ -1,19 +1,38 @@
 package com.sosaley.hap.register;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.animation.LinearInterpolator;
 
+import com.agrawalsuneet.dotsloader.loaders.LazyLoader;
+import com.agrawalsuneet.dotsloader.loaders.TashieLoader;
 import com.sosaley.hap.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
+
+    LazyLoader lazyLoader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        /*lazyLoader=findViewById(R.id.myLoader);
+
+        TashieLoader tashie = new TashieLoader(
+                this, 5,
+                30, 10,
+                ContextCompat.getColor(this, R.color.green));
+
+        tashie.setAnimDuration(500);
+        tashie.setAnimDelay(100);
+        tashie.setInterpolator(new LinearInterpolator());
+
+        lazyLoader.addView(tashie);*/
 
         new SplashDownCountDown(1500, 1000).start();
 

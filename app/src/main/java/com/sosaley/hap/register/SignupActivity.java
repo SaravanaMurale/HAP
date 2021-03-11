@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -30,6 +31,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     Button signUpBtn;
 
+    EditText signupMobile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
         signInButton=(SignInButton)findViewById(R.id.gmailSignup);
         signUpBtn=(Button)findViewById(R.id.signUpBtn);
+        signupMobile=(EditText)findViewById(R.id.signupMobile);
 
         signInButton.setOnClickListener(this);
 
@@ -45,12 +49,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             public void onClick(View view) {
 
 
-                Intent intent=new Intent(SignupActivity.this,OTPActivity.class);
-
-                intent.putExtra("MOBILE","+919123521374");
-
-                startActivity(intent);
-
+                launchOTPActivity();
 
 
             }
@@ -58,6 +57,14 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
         GoogleSignInOptions signInOptions=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         googleApiClient=new GoogleApiClient.Builder(this).enableAutoManage(this,this).addApi(Auth.GOOGLE_SIGN_IN_API,signInOptions).build();
+    }
+
+    private void launchOTPActivity() {
+
+        Intent intent=new Intent(SignupActivity.this,OTPActivity.class);
+        intent.putExtra("MOBILE","+919123521374");
+        startActivity(intent);
+
     }
 
     @Override

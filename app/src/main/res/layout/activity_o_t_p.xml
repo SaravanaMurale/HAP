@@ -11,9 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/otp_sent"
-            android:gravity="center"
-
-            />
+            android:gravity="center" />
 
 
 

@@ -77,6 +77,8 @@ public class OTPActivity extends AppCompatActivity {
                 //otpTextView.setText(code);//set code in edit text
                 //then you can send verification code to server
 
+                System.out.println("SmsVerifierReceivedOTP"+code);
+
                 otpTextView.setOTP(code);
             }
         });

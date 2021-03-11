@@ -11,5 +11,7 @@
     <string name="other_singin">Other Signin</string>
     <string name="otp_sent">Verification code sent to </string>
     <string name="resend">Resend OTP?</string>
+    <string name="dont_account">Dont Have An Account?</string>
+    <string name="forget_password">Forget Password?</string>
 
 </resources>

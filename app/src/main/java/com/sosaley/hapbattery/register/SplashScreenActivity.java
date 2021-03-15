@@ -1,16 +1,13 @@
-package com.sosaley.hap.register;
+package com.sosaley.hapbattery.register;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.animation.LinearInterpolator;
 
 import com.agrawalsuneet.dotsloader.loaders.LazyLoader;
-import com.agrawalsuneet.dotsloader.loaders.TashieLoader;
-import com.sosaley.hap.R;
+import com.sosaley.hapbattery.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

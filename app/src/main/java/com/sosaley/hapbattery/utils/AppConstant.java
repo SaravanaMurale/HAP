@@ -1,4 +1,4 @@
-package com.sosaley.hap.utils;
+package com.sosaley.hapbattery.utils;
 
 public class AppConstant {
 

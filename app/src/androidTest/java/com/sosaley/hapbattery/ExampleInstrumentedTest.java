@@ -1,4 +1,4 @@
-package com.sosaley.hap;
+package com.sosaley.hapbattery;
 
 import android.content.Context;
 

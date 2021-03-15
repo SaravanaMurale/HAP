@@ -1,4 +1,4 @@
-package com.sosaley.hap.utils;
+package com.sosaley.hapbattery.utils;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;

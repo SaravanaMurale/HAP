@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "1076299569480",
-    "project_id": "hapapp-dabc3",
-    "storage_bucket": "hapapp-dabc3.appspot.com"
+    "project_number": "762264020518",
+    "project_id": "hap-project-abecf",
+    "storage_bucket": "hap-project-abecf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1076299569480:android:aad5e1b3c4a14c103ffb7d",
+        "mobilesdk_app_id": "1:762264020518:android:5e8294ddd8857b204968e7",
         "android_client_info": {
-          "package_name": "com.sosaley.hap"
+          "package_name": "com.sosaley.hapbattery"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1076299569480-d98igllb3elcs7jfle8fd3kk848ng7l4.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.sosaley.hap",
-            "certificate_hash": "36659da7b08c16d8385edf0a7fabfeb8bc5be05d"
-          }
-        },
-        {
-          "client_id": "1076299569480-40hm8qtps8euo3d4giv1u23jhnoo3krb.apps.googleusercontent.com",
+          "client_id": "762264020518-6d3bfq9f4l01fa9k1bvrbkq4couqp1j6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDTLsHDZSoJMUXs4Dlsr1ALeHIUfYix3uk"
+          "current_key": "AIzaSyDAlbW1BpPlJeEd8dmXThAJRUHIZ9HQsls"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1076299569480-40hm8qtps8euo3d4giv1u23jhnoo3krb.apps.googleusercontent.com",
+              "client_id": "762264020518-6d3bfq9f4l01fa9k1bvrbkq4couqp1j6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

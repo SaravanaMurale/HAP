@@ -1,4 +1,4 @@
-package com.sosaley.hap.register;
+package com.sosaley.hapbattery.register;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,9 +20,9 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
-import com.sosaley.hap.R;
+import com.sosaley.hapbattery.R;
 
-import static com.sosaley.hap.utils.AppConstant.REQ_CODE;
+import static com.sosaley.hapbattery.utils.AppConstant.REQ_CODE;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
 
@@ -92,18 +92,24 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
         System.out.println("SuccessResult"+result.isSuccess());
 
+
+        System.out.println("ResultStatus"+result.getStatus());
+
+
         if(result.isSuccess()) {
             GoogleSignInAccount account = result.getSignInAccount();
             String name = account.getDisplayName();
             String email = account.getEmail();
-
-            signOut();
 
             System.out.println("Name"+name);
 
             System.out.println("Email"+email);
 
             Toast.makeText(SignupActivity.this,"NameAndEmail "+name+" "+email,Toast.LENGTH_LONG).show();
+
+            //signOut();
+
+
 
 
             /*String img_url = account.getPhotoUrl().toString();
@@ -131,6 +137,11 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+        System.out.println(connectionResult.getErrorCode());
+        System.out.println(connectionResult.getErrorMessage().toString());
+        Toast.makeText(SignupActivity.this,"ErrorCode "+connectionResult.getErrorMessage().toString()+" "+connectionResult.getErrorCode(),Toast.LENGTH_LONG).show();
+
 
     }
 

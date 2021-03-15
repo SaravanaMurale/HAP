@@ -1,4 +1,4 @@
-package com.sosaley.hap.register;
+package com.sosaley.hapbattery.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.sosaley.hap.R;
-import com.sosaley.hap.menu.QRDisplayActivity;
-import com.sosaley.hap.menu.QRScannerActivity;
+import com.sosaley.hapbattery.R;
+import com.sosaley.hapbattery.menu.QRDisplayActivity;
 
 public class SigninActivity extends AppCompatActivity {
 

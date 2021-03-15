@@ -1,4 +1,4 @@
-package com.sosaley.hap.menu;
+package com.sosaley.hapbattery.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.sosaley.hap.R;
-import com.sosaley.hap.utils.AppConstant;
-import com.sosaley.hap.utils.PermissionUtils;
+import com.sosaley.hapbattery.R;
+import com.sosaley.hapbattery.utils.AppConstant;
+import com.sosaley.hapbattery.utils.PermissionUtils;
 
 public class QRDisplayActivity extends AppCompatActivity {
 

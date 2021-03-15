@@ -1,10 +1,10 @@
-package com.sosaley.hap;
+package com.sosaley.hapbattery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.sosaley.hap.R;
+import com.sosaley.hapbattery.R;
 
 public class MainActivity extends AppCompatActivity {
 

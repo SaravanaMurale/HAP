@@ -1,13 +1,11 @@
-package com.sosaley.hap.menu;
+package com.sosaley.hapbattery.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.google.zxing.Result;
-import com.sosaley.hap.R;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
